@@ -1,12 +1,1 @@
-https://tecweb2016.studenti.math.unipd.it/
-
 Password Database: Queevee0uewooluB
-
-ssh tecweb2016.studenti.math.unipd.it -l nome_utente
-https://tecweb2016.studenti.math.unipd.it/phpmyadmin/
-
-<?php
-require_once __DIR__ . DIRECTORY_SEPARATOR . "Protagonisti.php";
-use DB\DBAccess;
-?>
-
