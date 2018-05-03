@@ -199,42 +199,58 @@
 \hypersetup{hidelinks}
 \tableofcontents
 \newpage
-
-
-
-
-
-
-
 \section{Presentazione sito}
 Il sito in questione ha lo scopo di presentare l'evento musicale "Home Festival". Qui l'utente può trovare tutte le informazioni di cui ha bisogno per assistere ai vari concerti che avranno luogo durante il festival: in particolare vengono descritti brevemente i gruppi che parteciperanno all'evento ed è inoltre presente un insieme di indicazioni per raggiungere il luogo dell'evento con i principali mezzi di trasporto.
 È anche possibile effettuare una registrazione, che permette all'utente di commentare le ultime news, sugli artisti partecipanti al festival, pubblicate dagli amministratori. 
-
 \section{Utenti destinatari}
 Il sito è destinato a tutti gli utenti che intendono partecipare all’Home Festival o che comunque desiderano avere informazioni riguardo all’evento.  
 All’interno del footer sono inoltre presenti alcuni contatti, nel caso l’utente volesse ricevere informazioni aggiuntive, e i link alle pagine dei principali social network, dove vengono inseriti gli ultimi aggiornamenti riguardanti il festival.
-
 \section{Tipi di utenti}
 Le categorie di utenti che il sito mette a disposizione sono:
 \newline \textbf{Amministratore: }è in grado di pubblicare gli articoli che verranno inseriti nella sezione News tramite una form presente nella pagina stessa. Può inoltre rimuovere i commenti pubblicati dagli utenti sui vari articoli presenti sul sito e commentare a sua volta.
 \newline \textbf{Utente: }rappresenta l'utilizzatore vero e proprio del sito. Può commentare gli articoli pubblicati nelle News dagli amministratori.
-
 \section{Progettazione}
-\subsection{Organizzazione dell'informazione}
+\subsection{Organizzazione del sito}
 Il sito presenta una barra di navigazione globale che contiene le varie aree del sito (Home, News, LineUp, Biglietti, Come Arrivare, Orari, Login e Registrati) e una barra di ricerca, utile per l'individuazione di particolari informazioni all'interno dell'intero sito.
 Il codice della barra di navigazione è contenuto nel file nav.php, che viene richiamato da tutte le pagine del sito.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=1\textwidth]{Images/navbar.png}
+  \caption{Barra di navigazione globale e barra di ricerca}
+  \label{fig:navbar}
+\end{figure}
+
 \subsection{Aree del sito}
 \textbf{Home: }è la homepage del sito. La pagina è generata dinamicamente dal file home.php e presenta una form che permette agli utenti di iscriversi alla newsletter, una sezione dove viene visualizzato l'ultimo articolo inserito dagli amministratori e un'immagine che elenca i vari artisti che partecipano al festival musicale.
-\newline \textbf{News: }contiene tutti gli articoli pubblicati sul sito. In ogni pagina sono visualizzati 5 articoli ed è possibile navigare tra le varie pagine tramite il menu di paginazione posizionato in coda alle news.
-\newline \textbf{LineUp: }
-\newline \textbf{Biglietti: }
-\newline \textbf{Come Arrivare: }
+\newline \textbf{News: }contiene tutti gli articoli pubblicati sul sito. In ogni pagina sono visualizzati 5 articoli ed è possibile navigare tra le varie pagine tramite il menu di paginazione posizionato in coda alle news. L'utente può inoltre cliccare su singolo articolo per visualizzarne la versione completa e, se ha anche effettuato il login al sito, può scrivere un commento tramite il form apposito.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=1\textwidth]{Images/news.png}
+  \caption{Pagina per la visualizzazione delle news}
+  \label{fig:news}
+\end{figure}
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=1\textwidth]{Images/articolo.png}
+  \caption{Pagina per la visualizzazione di un articolo con relativo form per l'inserimento di commenti}
+  \label{fig:articolo}
+\end{figure}
+\newline \textbf{LineUp: }presenta l'insieme degli artisti che partecipano all'evento, descritti da relativi immagini e nomi. Cliccando su quest'ultimo è possibile accedere alla pagina dedicata al singolo artista, che contiene una breve descrizione della sua carriera e alcune informazioni generali.
+\newline \textbf{Biglietti: }fornisce all'utente le tipologie di biglietto che è possibile acquistare con una breve descrizione sottostante e il relativo prezzo.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=1\textwidth]{Images/biglietti.png}
+  \caption{Pagina con i vari tipi di biglietto proposti per poter partecipare al festival}
+  \label{fig:biglietti}
+\end{figure}
+\newline \textbf{Come Arrivare: }contiene una mappa, visualizzata tramite script, e anche una descrizione testuale 
 \newline \textbf{Orari: }
 \newline \textbf{Login: }
 \newline \textbf{Registrati: }
 
 \subsection{Struttura organizzativa}
-
+Come struttura organizzativa è stato impiegato un database, dato che ogni 
 \section{Accessibilità}
 
 \subsection{Perceivable}
@@ -284,6 +300,11 @@ Il codice della barra di navigazione è contenuto nel file nav.php, che viene ri
 \subsection{Amministratore}
 
 \subsection{Utente}
+
+\section{Scelte Progettuali}
+\begin{itemize}
+	\item{Il form per l'inserimento di un articolo da parte dell'amministratore, che viene visualizzato se quest'ultimo ha effettuato il login, è posto al termine della pagina News, e non all'inizio, per favorire il controllo dell'articolo che è appena stato inserito}
+\end{itemize}
 
 \section{Gerarchia dei file}
 
