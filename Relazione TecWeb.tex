@@ -223,7 +223,7 @@ Il codice della barra di navigazione è contenuto nel file nav.php, che viene ri
 
 \subsection{Aree del sito}
 \textbf{Home: }è la homepage del sito. La pagina è generata dinamicamente dal file home.php e presenta una form che permette agli utenti di iscriversi alla newsletter, una sezione dove viene visualizzato l'ultimo articolo inserito dagli amministratori e un'immagine che elenca i vari artisti che partecipano al festival musicale.
-\newline \textbf{News: }contiene tutti gli articoli pubblicati sul sito. In ogni pagina sono visualizzati 5 articoli ed è possibile navigare tra le varie pagine tramite il menu di paginazione posizionato in coda alle news. L'utente può inoltre cliccare su singolo articolo per visualizzarne la versione completa e, se ha anche effettuato il login al sito, può scrivere un commento tramite il form apposito.
+\newline \textbf{News: }contiene tutti gli articoli pubblicati sul sito. In ogni pagina sono visualizzati 5 articoli ed è possibile navigare tra le varie pagine tramite il menu di paginazione posizionato in coda alle news. L'utente può inoltre cliccare su singolo articolo per visualizzarne la versione completa e, se ha anche effettuato il login al sito, può scrivere un commento tramite il form apposito. La pagina viene generata dinamicamente dal file news.php, in modo da mantenere l'ordine cronologico degli articoli visualizzati.
 \begin{figure}[h!]
   \centering
   \includegraphics[width=1\textwidth]{Images/news.png}
@@ -244,28 +244,68 @@ Il codice della barra di navigazione è contenuto nel file nav.php, che viene ri
   \caption{Pagina con i vari tipi di biglietto proposti per poter partecipare al festival}
   \label{fig:biglietti}
 \end{figure}
-\newline \textbf{Come Arrivare: }contiene una mappa, visualizzata tramite script, e anche una descrizione testuale 
-\newline \textbf{Orari: }
-\newline \textbf{Login: }
+\newline \textbf{Come Arrivare: }contiene una mappa, visualizzata tramite script, e anche una descrizione testuale delle indicazioni stradali per raggiungere il luogo dell'evento con i principali mezzi di trasporto, così da mantenere l'usabilità del sito anche se quest'ultimo viene visitato con JavaScript disattivato.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=1\textwidth]{Images/mappa.png}
+  \caption{Mappa visualizzata tramite JavaScript, utilizzando un'API fornita da Google}
+  \label{fig:mappa}
+\end{figure}
+%%\begin{figure}[h!]
+%%  \centering
+%%  \includegraphics[width=1\textwidth]{Images/indicazioni.png}
+%%  \caption{Alternativa testuale alla mappa nel caso in cui JavaScript non fosse attivo}
+%%  \label{fig:indicazioni}
+%%\end{figure}
+\newline \textbf{Orari: }presenta gli orari dei vari concerti che avranno luogo durante il festival suddivisi per giornate.
+%%\begin{figure}[h!]
+%% \centering
+%%  \includegraphics[width=1\textwidth]{Images/orari.png}
+%%  \caption{Orari dei concerti che si tengono nelle 3 giornate del festival}
+%%  \label{fig:orari}
+%%\end{figure}
+\newline \textbf{Login: }fornisce una form, sia agli utenti che agli amministratori, per effettuare il login al sito. Dopo aver completato l'accesso, l'utente può commentare gli articoli del sito mentre gli amministratori possono anche eliminare i commenti e gli articoli inseriti.
+%%\begin{figure}[h!]
+%% \centering
+%%  \includegraphics[width=1\textwidth]{Images/login.png}
+%%  \caption{}
+%%  \label{fig:login}
+%%\end{figure}
 \newline \textbf{Registrati: }
-
+%%\begin{figure}[h!]
+%% \centering
+%%  \includegraphics[width=1\textwidth]{Images/registrazione.png}
+%%  \caption{}
+%%  \label{fig:registrazione}
+%%\end{figure}
 \subsection{Struttura organizzativa}
-Come struttura organizzativa è stato impiegato un database, dato che ogni 
+Come struttura organizzativa è stato impiegato un database, dato che ogni elemento presente sul sito ()
 \section{Accessibilità}
 
 \subsection{Perceivable}
+%%DA LEGGERE%%
+L’utente all’arrivo nel sito web ha immediatamente le informazioni essenziali che danno l’idea generale di cosa il sito tratta. L’immagine di testata fa sapere quando il festival si svolge, le varie voci della navbar sottostante fanno capire chiaramente all’utente cosa il sito offre. In ogni pagina disponibile nel sito questi elementi rimangono sempre presenti insieme al footer, nel quale oltre ai recapiti, come email e telefono, è presente un link alla mappa del sito. In caso l’utente sia disorientato, consultando la mappa del sito conosce la struttura gerarchica di ogni pagina presente.
 
 \subsubsection{Text Alternatives}
+Tutti i contenuti non testuali presenti sul sito dispongono di un'alternativa testuale: le varie immagini inserite presentano tutte l'attributo \textbf{alt}, mentre la mappa che viene visualizzata nella pagina Come Arrivare possiede una descrizione testuale sottostante, nel caso venisse utilizzato uno screen reader per visitare il sito oppure JavaScript fosse disattivato.
 
 \subsubsection{Time-based Media}
+I contenuti temporali all'interno di un sito risultano poco accessibili agli utenti con disabilità e per questo non sono stati inseriti.
 
 \subsubsection{Adaptability}
+%%DA LEGGERE%%
+Il sito può essere visionato in diversi dispositivi con dimensioni dello schermo differenti mantenendo sempre una struttura simile e non perdendo alcuna informazione. La versione per smartphone si differenzia dalle versioni desktop e tablet soprattutto per la navbar. La navbar mantiene il logo del festival, la barra di ricerca che hanno un’importanza prioritaria invece il menu per navigare il sito viene sostituito da un unico bottone che al tap rende visibile le varie voci del menu. Per motivi legati allo spazio, negli smartphone non è presente l’immagine di testata, le informazioni che conteneva l’utente le ritrova ripetutamente in varie pagine del sito.
+
 
 \subsection{Understandable}
 
 \subsubsection{Legibility}
 
 \subsubsection{Predictability}
+
+\subsubsection{Input Assistance}
+%%DA LEGGERE%%
+Al momento della registrazione, dell’accesso al sito tramite credenziali e dell’iscrizione alla newsletter, i campi inseriti devono rispettare dei parametri per essere accettati dal server. L’utente mentre esegue queste azioni è accompagnato da dei messaggi che lo aiutano a non sbagliare la procedura.
 
 \subsection{Robust}
 
@@ -278,6 +318,7 @@ Come struttura organizzativa è stato impiegato un database, dato che ogni
 \subsubsection{Time Availability}
 
 \subsubsection{Epilepsy}
+Il sito non presenta contenuti che potrebbero creare problemi agli utenti affetti da epilessia.
 
 \subsubsection{Navigability}
 
@@ -304,6 +345,8 @@ Come struttura organizzativa è stato impiegato un database, dato che ogni
 \section{Scelte Progettuali}
 \begin{itemize}
 	\item{Il form per l'inserimento di un articolo da parte dell'amministratore, che viene visualizzato se quest'ultimo ha effettuato il login, è posto al termine della pagina News, e non all'inizio, per favorire il controllo dell'articolo che è appena stato inserito}
+	\item{Posizione form commento articolo...........................}
+	\item{Link pagination non risultano visitati.....................................}
 \end{itemize}
 
 \section{Gerarchia dei file}
