@@ -245,15 +245,15 @@ Il codice della barra di navigazione è contenuto nel file nav.php, che viene ri
   \label{fig:biglietti}
 \end{figure}
 \newline \textbf{Come Arrivare: }contiene una mappa, visualizzata tramite script, e anche una descrizione testuale delle indicazioni stradali per raggiungere il luogo dell'evento con i principali mezzi di trasporto, così da mantenere l'usabilità del sito anche se quest'ultimo viene visitato con JavaScript disattivato.
-\begin{figure}[h!]
-  \centering
-  \includegraphics[width=1\textwidth]{Images/mappa.png}
-  \caption{Mappa visualizzata tramite JavaScript, utilizzando un'API fornita da Google}
-  \label{fig:mappa}
-\end{figure}
 %%\begin{figure}[h!]
 %%  \centering
-%%  \includegraphics[width=1\textwidth]{Images/indicazioni.png}
+%%  \includegraphics[width=1\textwidth]{Images/mappa.png}
+%%  \caption{Mappa visualizzata tramite JavaScript, utilizzando un'API fornita da Google}
+%%  \label{fig:mappa}
+%%\end{figure}
+%%\begin{figure}[h!]
+%%  \centering
+%% \includegraphics[width=1\textwidth]{Images/indicazioni.png}
 %%  \caption{Alternativa testuale alla mappa nel caso in cui JavaScript non fosse attivo}
 %%  \label{fig:indicazioni}
 %%\end{figure}
@@ -279,12 +279,10 @@ Il codice della barra di navigazione è contenuto nel file nav.php, che viene ri
 %%  \label{fig:registrazione}
 %%\end{figure}
 \subsection{Struttura organizzativa}
-Come struttura organizzativa è stato impiegato un database, dato che ogni elemento presente sul sito ()
+Come struttura organizzativa è stato impiegato un database, dato che ogni elemento presente sul sito (utenti, articoli, commenti, artisti e biglietti) possono essere ricondotti a dell'entità all'interno della base di dati
 \section{Accessibilità}
 
 \subsection{Perceivable}
-%%DA LEGGERE%%
-L’utente all’arrivo nel sito web ha immediatamente le informazioni essenziali che danno l’idea generale di cosa il sito tratta. L’immagine di testata fa sapere quando il festival si svolge, le varie voci della navbar sottostante fanno capire chiaramente all’utente cosa il sito offre. In ogni pagina disponibile nel sito questi elementi rimangono sempre presenti insieme al footer, nel quale oltre ai recapiti, come email e telefono, è presente un link alla mappa del sito. In caso l’utente sia disorientato, consultando la mappa del sito conosce la struttura gerarchica di ogni pagina presente.
 
 \subsubsection{Text Alternatives}
 Tutti i contenuti non testuali presenti sul sito dispongono di un'alternativa testuale: le varie immagini inserite presentano tutte l'attributo \textbf{alt}, mentre la mappa che viene visualizzata nella pagina Come Arrivare possiede una descrizione testuale sottostante, nel caso venisse utilizzato uno screen reader per visitare il sito oppure JavaScript fosse disattivato.
@@ -293,9 +291,8 @@ Tutti i contenuti non testuali presenti sul sito dispongono di un'alternativa te
 I contenuti temporali all'interno di un sito risultano poco accessibili agli utenti con disabilità e per questo non sono stati inseriti.
 
 \subsubsection{Adaptability}
-%%DA LEGGERE%%
-Il sito può essere visionato in diversi dispositivi con dimensioni dello schermo differenti mantenendo sempre una struttura simile e non perdendo alcuna informazione. La versione per smartphone si differenzia dalle versioni desktop e tablet soprattutto per la navbar. La navbar mantiene il logo del festival, la barra di ricerca che hanno un’importanza prioritaria invece il menu per navigare il sito viene sostituito da un unico bottone che al tap rende visibile le varie voci del menu. Per motivi legati allo spazio, negli smartphone non è presente l’immagine di testata, le informazioni che conteneva l’utente le ritrova ripetutamente in varie pagine del sito.
 
+Il sito può essere visualizzato su diversi dispositivi con dimensioni dello schermo differenti mantenendo sempre una struttura simile e non perdendo alcuna informazione. La versione per smartphone si differenzia dalle versioni desktop e tablet soprattutto per la navbar, la quale mantiene il logo del festival e la barra di ricerca, che hanno un'importanza prioritaria, mentre il menu per navigare all'interno sito viene sostituito da un unico bottone che, quando viene effettuato un tap, rende visibili le varie voci del menu. Per motivi di impaginazione, inoltre, negli smartphone non è presente l’immagine di testata.
 
 \subsection{Understandable}
 
@@ -304,8 +301,7 @@ Il sito può essere visionato in diversi dispositivi con dimensioni dello scherm
 \subsubsection{Predictability}
 
 \subsubsection{Input Assistance}
-%%DA LEGGERE%%
-Al momento della registrazione, dell’accesso al sito tramite credenziali e dell’iscrizione alla newsletter, i campi inseriti devono rispettare dei parametri per essere accettati dal server. L’utente mentre esegue queste azioni è accompagnato da dei messaggi che lo aiutano a non sbagliare la procedura.
+Al momento della registrazione, dell’accesso al sito tramite credenziali e dell’iscrizione alla newsletter, i campi inseriti devono rispettare delle parametri per essere accettati dal server. L’utente, mentre esegue queste azioni, visualizza dei messaggi al di sotto dei textfield che lo aiutano a non sbagliare la procedura.
 
 \subsection{Robust}
 
