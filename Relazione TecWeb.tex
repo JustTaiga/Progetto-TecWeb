@@ -156,12 +156,15 @@
 \bgroup
 \def\arraystretch{1.3}
 \centering
+
 \begin{tabular}{c|L{5cm}}
-\multicolumn{2}{c}{\textbf{Gruppo} } \\ \hline
-  Componenti & \Componenti{} \\
-  Referente & \Referente{}
+\multicolumn{2}{c}{} \\ 
+  \textbf{Componenti} & \Componenti{} \\
+  \textbf{Referente} & \Referente{}
 \end{tabular}
 \egroup
+
+
 
 \vspace*{80px}
 
@@ -172,7 +175,7 @@
 \centering
 \begin{tabular}{c}
 \multicolumn{1}{c}{\textbf{Indirizzo Web Del Sito} } \\
-  \url{tecweb2016.studenti.math.unipd.it/abobbo}
+  \url{http://tecweb2016.studenti.math.unipd.it/abobbo/pages/home.php}
 \end{tabular}
 \egroup
 
@@ -180,14 +183,14 @@
 
 \begin{tabular}{c|L{4cm}}
 \multicolumn{2}{c}{\textbf{Credenziali Admin} } \\ \hline
-  Username & admin@progetto.com \\
-  Password & admin
+  \textbf{Username} & admin@progetto.com \\
+  \textbf{Password} & admin
 \end{tabular}
 \quad
 \begin{tabular}{c|L{4cm}}
 \multicolumn{2}{c}{\textbf{Credenziali Utente} } \\ \hline
-  Username & gino@progetto.com \\
-  Password & ciaog
+ \textbf{Username} & gino@progetto.com \\
+  \textbf{Password} & ciaog
 \end{tabular}
 
 \vspace*{10px}
@@ -213,48 +216,52 @@ Le categorie di utenti che il sito mette a disposizione sono:
 \subsection{Organizzazione del sito}
 Il sito presenta una barra di navigazione globale che contiene le varie aree del sito (Home, News, LineUp, Biglietti, Come Arrivare, Orari, Login e Registrati) e una barra di ricerca, utile per l'individuazione di particolari informazioni all'interno dell'intero sito.
 Il codice della barra di navigazione è contenuto nel file nav.php, che viene richiamato da tutte le pagine del sito.
-
-\begin{figure}[h!]
-  \centering
-  \includegraphics[width=1\textwidth]{Images/navbar.png}
-  \caption{Barra di navigazione globale e barra di ricerca}
-  \label{fig:navbar}
-\end{figure}
-
+%%\begin{figure}[h!]
+%%  \centering
+%%  \includegraphics[width=1\textwidth]{Images/navbar.png}
+%%  \caption{Barra di navigazione globale e barra di ricerca}
+%%  \label{fig:navbar}
+%%\end{figure}
 \subsection{Aree del sito}
 \textbf{Home: }è la homepage del sito. La pagina è generata dinamicamente dal file home.php e presenta una form che permette agli utenti di iscriversi alla newsletter, una sezione dove viene visualizzato l'ultimo articolo inserito dagli amministratori e un'immagine che elenca i vari artisti che partecipano al festival musicale.
 \newline \textbf{News: }contiene tutti gli articoli pubblicati sul sito. In ogni pagina sono visualizzati 5 articoli ed è possibile navigare tra le varie pagine tramite il menu di paginazione posizionato in coda alle news. L'utente può inoltre cliccare su singolo articolo per visualizzarne la versione completa e, se ha anche effettuato il login al sito, può scrivere un commento tramite il form apposito. La pagina viene generata dinamicamente dal file news.php, in modo da mantenere l'ordine cronologico degli articoli visualizzati.
-\begin{figure}[h!]
-  \centering
-  \includegraphics[width=1\textwidth]{Images/news.png}
-  \caption{Pagina per la visualizzazione delle news}
-  \label{fig:news}
-\end{figure}
-\begin{figure}[h!]
-  \centering
-  \includegraphics[width=1\textwidth]{Images/articolo.png}
-  \caption{Pagina per la visualizzazione di un articolo con relativo form per l'inserimento di commenti}
-  \label{fig:articolo}
-\end{figure}
-\newline \textbf{LineUp: }presenta l'insieme degli artisti che partecipano all'evento, descritti da relativi immagini e nomi. Cliccando su quest'ultimo è possibile accedere alla pagina dedicata al singolo artista, che contiene una breve descrizione della sua carriera e alcune informazioni generali.
-\newline \textbf{Biglietti: }fornisce all'utente le tipologie di biglietto che è possibile acquistare con una breve descrizione sottostante e il relativo prezzo.
-\begin{figure}[h!]
-  \centering
-  \includegraphics[width=1\textwidth]{Images/biglietti.png}
-  \caption{Pagina con i vari tipi di biglietto proposti per poter partecipare al festival}
-  \label{fig:biglietti}
-\end{figure}
-\newline \textbf{Come Arrivare: }contiene una mappa, visualizzata tramite script, e anche una descrizione testuale delle indicazioni stradali per raggiungere il luogo dell'evento con i principali mezzi di trasporto, così da mantenere l'usabilità del sito anche se quest'ultimo viene visitato con JavaScript disattivato.
 %%\begin{figure}[h!]
 %%  \centering
-%%  \includegraphics[width=1\textwidth]{Images/mappa.png}
-%%  \caption{Mappa visualizzata tramite JavaScript, utilizzando un'API fornita da Google}
-%%  \label{fig:mappa}
+%%  \includegraphics[width=1\textwidth]{Images/news.png}
+%%  \caption{Pagina per la visualizzazione delle news}
+%%  \label{fig:news}
 %%\end{figure}
 %%\begin{figure}[h!]
 %%  \centering
+%%  \includegraphics[width=1\textwidth]{Images/articolo.png}
+%%  \caption{Pagina per la visualizzazione di un articolo con relativo form per l'inserimento di commenti}
+%%  \label{fig:articolo}
+%%\end{figure}
+\newline \textbf{LineUp: }presenta l'insieme degli artisti che partecipano all'evento, descritti da relativi immagini e nomi. Cliccando su quest'ultimo è possibile accedere alla pagina dedicata al singolo artista, che contiene una breve descrizione della sua carriera e alcune informazioni generali.
+%%\begin{figure}[h!]
+%%  \centering
+%%  \includegraphics[width=1\textwidth]{Images/lineup.png}
+%%  \caption{}
+%%  \label{fig:lineup}
+%%\end{figure}
+%%\begin{figure}[h!]
+%%  \centering
+%%  \includegraphics[width=1\textwidth]{Images/artista.png}
+%%  \caption{}
+%%  \label{fig:artista}
+%%\end{figure}
+\newline \textbf{Biglietti: }fornisce all'utente le tipologie di biglietto che è possibile acquistare con una breve descrizione sottostante e il relativo prezzo.
+%%\begin{figure}[h!]
+%%  \centering
+%%  \includegraphics[width=1\textwidth]{Images/biglietti.png}
+%%  \caption{Pagina con i vari tipi di biglietto proposti per poter partecipare al festival}
+%%  \label{fig:biglietti}
+%%\end{figure}
+\newline \textbf{Come Arrivare: }contiene una descrizione testuale delle indicazioni per raggiungere il luogo dell'evento con i principali mezzi di trasporto. Non è stata inserita una mappa per mantenere le informazioni della pagina il più accessibili possibili.
+%%\begin{figure}[h!]
+%%  \centering
 %% \includegraphics[width=1\textwidth]{Images/indicazioni.png}
-%%  \caption{Alternativa testuale alla mappa nel caso in cui JavaScript non fosse attivo}
+%%  \caption{Indicazioni per raggiungere il festival}
 %%  \label{fig:indicazioni}
 %%\end{figure}
 \newline \textbf{Orari: }presenta gli orari dei vari concerti che avranno luogo durante il festival suddivisi per giornate.
@@ -264,6 +271,7 @@ Il codice della barra di navigazione è contenuto nel file nav.php, che viene ri
 %%  \caption{Orari dei concerti che si tengono nelle 3 giornate del festival}
 %%  \label{fig:orari}
 %%\end{figure}
+%%\pagebreak
 \newline \textbf{Login: }fornisce una form, sia agli utenti che agli amministratori, per effettuare il login al sito. Dopo aver completato l'accesso, l'utente può commentare gli articoli del sito mentre gli amministratori possono anche eliminare i commenti e gli articoli inseriti.
 %%\begin{figure}[h!]
 %% \centering
@@ -271,7 +279,7 @@ Il codice della barra di navigazione è contenuto nel file nav.php, che viene ri
 %%  \caption{}
 %%  \label{fig:login}
 %%\end{figure}
-\newline \textbf{Registrati: }
+\newline \textbf{Registrati: }contiene una form che consente all'utente di effettuare la registrazione al sito inserendo i propri dati. Dopo che si è registrato, l'utente può accedere al sito con l'account che ha appena creato.
 %%\begin{figure}[h!]
 %% \centering
 %%  \includegraphics[width=1\textwidth]{Images/registrazione.png}
@@ -279,7 +287,7 @@ Il codice della barra di navigazione è contenuto nel file nav.php, che viene ri
 %%  \label{fig:registrazione}
 %%\end{figure}
 \subsection{Struttura organizzativa}
-Come struttura organizzativa è stato impiegato un database, dato che ogni elemento presente sul sito (utenti, articoli, commenti, artisti e biglietti), può essere ricondotto a un'entità all'interno della base di dati. Questo facilità la gestione e l'inserimento dei dati al'interno del sito.
+Come struttura organizzativa è stato impiegato un database, dato che ogni elemento presente sul sito (utenti, articoli, commenti, artisti e biglietti), può essere ricondotto a un'entità all'interno della base di dati. Questo facilità la gestione e l'inserimento dei dati all'interno del sito.
 \section{Accessibilità}
 
 \subsection{Perceivable}
@@ -299,6 +307,7 @@ Il sito può essere visualizzato su diversi dispositivi con dimensioni dello sch
 \subsubsection{Legibility}
 
 
+
 \subsubsection{Predictability}
 
 \subsubsection{Input Assistance}
@@ -307,17 +316,21 @@ Al momento della registrazione, dell’accesso al sito tramite credenziali e del
 \subsection{Robust}
 
 \subsubsection{Compatibility}
+Il sito è stato sviluppato utilizzando XHTML 1.0 e CSS 3.0
 
 \subsection{Operable}
 
 \subsubsection{Keyboard Accessibility}
+È possibile navigare sul sito e compilare i vari form proposti utilizzando il tasto \textbf{TAB}. Le voci della navbar dispongono inoltre di access key, le quali facilitano la navigazione tramite screen reader.
 
 \subsubsection{Time Availability}
+Nel sito non sono stati inseriti contenuti temporizzati in quanto questi non risulterebbero usufruibili da tutti i visitatori del sito.
 
 \subsubsection{Epilepsy}
 Il sito non presenta contenuti che potrebbero creare problemi agli utenti affetti da epilessia.
 
 \subsubsection{Navigability}
+All'inizio di ogni pagina è stato inserito un link che rimanda direttamente al contenuto della stessa, trascurando la navbar e la barra di ricerca, in modo da facilitare la navigazione agli utenti non vedenti che utilizzano uno screen reader.
 
 \subsection{Visione del sito da parte di individui con disturbi visivi}
 
