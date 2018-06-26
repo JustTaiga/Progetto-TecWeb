@@ -2,3 +2,6 @@
 -Link circolari su Login e Registrati
 -Screen codice PHP
 -Screen telefono su compatibilità dispositivi
+-Controllare se quando si elimina un articolo vengono eliminati anche i commenti di quell'artiolo
+-Spiegare bene i controlli sui form nella parte php
+-Vedere se è fattibile eliminare l'errore quando ci si registra con una email già utilizzata
