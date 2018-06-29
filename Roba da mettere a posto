@@ -1,4 +1,3 @@
--Title delle pagine
 -Link circolari su Login e Registrati
 -Screen codice PHP
 -Screen telefono su compatibilità dispositivi
@@ -7,5 +6,4 @@
 -Vedere se è fattibile eliminare l'errore quando ci si registra con una email già utilizzata
 -Rimettere metatag sul sito
 -Fixare i textfield per safari col inline-block
--Elimina articolo non diventa rosso quando si passa col mouse
 -Menu di paginazione su internet explorer
